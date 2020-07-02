@@ -9,6 +9,8 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 
+import CallToAction from './ui/CallToAction';
+
 import animationData from '../animations/landinganimation/data';
 import customSoftwareIcon from '../assets/Custom Software Icon.svg';
 import mobileAppsIcon from '../assets/mobileIcon.svg';
@@ -395,7 +397,7 @@ export default function LandingPage() {
                 <Typography variant='h2' style={{ color: 'white' }}>
                   Contact Us
                 </Typography>
-                <Typography variant='subtitle2'>Say Hello!</Typography>
+                <Typography variant='subtitle2'>Say hello!</Typography>
                 <Grid item>
                   <Button
                     variant='outlined'
@@ -411,6 +413,10 @@ export default function LandingPage() {
           </Grid>
           <div className={classes.infoBackground} />
         </Grid>
+      </Grid>
+      <Grid item>
+        {/*-----Information Block-----*/}
+        <CallToAction />
       </Grid>
     </Grid>
   );
